@@ -1,0 +1,43 @@
+-------------------------------
+
+**Instructions for Using the SAMS Project:**
+
+1. **Setup Virtual Environment:**
+   - Open your terminal or command prompt.
+   - Navigate to the project directory.
+   - Create a virtual environment:
+     RUN ` python -m venv venv `
+    
+   - Activate the virtual environment:
+     - On Windows:
+       RUN  ` venv\Scripts\activate `
+
+     - On macOS/Linux:
+       RUN ` source venv/bin/activate `
+
+2. **Install Dependencies:**
+   - Install required dependencies using pip(django and mysqlclient)
+     
+3. **Database Configuration:**
+   - Ensure MySQL is installed on your system.
+   - Configure database settings in `settings.py`:
+     - Set database engine, name, user, password, host, and port in the `DATABASES` dictionary.
+
+4. **Run Migrations:**
+   - Apply migrations to create database tables:
+     RUN ` python manage.py migrate `
+     
+
+5. **Run the Server:**
+   - Start the Django development server:
+     RUN ` python manage.py runserver `
+
+6. **Access the Application:**
+   - Open a web browser and navigate to the server URL (usually http://127.0.0.1:8000/).
+
+7. **Use the Application:**
+   - Utilize the application to manage shows, book tickets, view balance sheets, etc.
+
+**Note:** Before running the server, ensure to modify the MySQL details in the `settings.py` file located in the SAMS folder to match your MySQL configuration.
+
+-----------------
